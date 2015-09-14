@@ -23,6 +23,7 @@ PODS:
   - TRCache (0.2):
     - AFNetworking (~> 2.6.0)
   - TRMessageKit (0.0.1):
+    - TRCache (~> 0.2)
     - TRSECoreTextView (~> 0.0.1)
     - TRWebImage (~> 0.4)
   - TRSECoreTextView (0.0.1)
@@ -39,7 +40,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   TRCache: 21b10c27918df7ecbd6aaeb6cd7f84451dc0fa2a
-  TRMessageKit: 0d75feedf370bdd88459a9ad81a20d6af1a2ec6d
+  TRMessageKit: 22ecd52a8459b7a4bd0511d406b558af7e4c34cc
   TRSECoreTextView: ba32b8a2cc31d7dd75705b61a2bf430ae58a7d1f
   TRWebImage: a0bf13ffbf5b292d7884c7184f24932b03003a2b
 

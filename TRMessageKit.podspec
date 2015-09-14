@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TRMessageKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "fork fro TRMessageKit"
 
   s.description  = <<-DESC
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "TRWebImage", "~> 0.4"
   s.dependency "TRSECoreTextView", "~> 0.0.1"
-
+  s.dependency 'TRCache', "~> 0.2"
 end
