@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
   s.public_header_files = "Classes/**/*.h"
 
 
-  #s.frameworks        = "CoreTelephony", "SystemConfiguration", "AddressBook"
-  #s.library = 'z'
+  s.frameworks        = "CoreTelephony", "SystemConfiguration"
+  s.library = 'stdc++', 'z'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
