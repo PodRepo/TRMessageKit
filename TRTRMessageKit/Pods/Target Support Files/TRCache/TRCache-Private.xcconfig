@@ -1,5 +1,0 @@
-#include "TRCache.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/TRCache" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/TRCache" "${PODS_ROOT}/Headers/Public/TRMessageKit" "${PODS_ROOT}/Headers/Public/TRSECoreTextView" "${PODS_ROOT}/Headers/Public/TRWebImage"
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
