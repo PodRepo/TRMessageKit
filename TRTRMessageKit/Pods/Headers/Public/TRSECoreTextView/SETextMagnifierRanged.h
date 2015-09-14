@@ -1,0 +1,1 @@
+../../../TRSECoreTextView/Classes/SECoreTextView/SETextMagnifierRanged.h

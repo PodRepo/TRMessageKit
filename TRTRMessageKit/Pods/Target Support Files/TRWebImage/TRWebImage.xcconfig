@@ -1,0 +1,1 @@
+TRWEBIMAGE_OTHER_LDFLAGS = -framework "MapKit"

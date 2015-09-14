@@ -1,0 +1,1 @@
+../../../TRSECoreTextView/Classes/extend/SEEmotionAttachment.h
