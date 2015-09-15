@@ -13,9 +13,9 @@ typedef NS_ENUM(NSUInteger, XHBubbleImageViewStyle) {
     XHBubbleImageViewStyleWeChat = 0
 };
 
-typedef NS_ENUM(NSUInteger, XHBubbleMessageType) {
-    XHBubbleMessageType_Sending = 0,
-    XHBubbleMessageType_Receiving = 1,
+typedef NS_ENUM(NSUInteger, XHMessageType) {
+    XHMessageType_Sending = 0,
+    XHMessageType_Receiving = 1,
 };
 
 
@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, XHBubbleMessageMenuSelecteType) {
 
 @interface XHMessageBubbleFactory : NSObject
 
-+ (UIImage *)bubbleImageViewForType:(XHBubbleMessageType)type
++ (UIImage *)bubbleImageViewForType:(XHMessageType)type
                                   style:(XHBubbleImageViewStyle)style
                               meidaType:(XHBubbleMessageMediaType)mediaType;
 

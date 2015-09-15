@@ -10,14 +10,14 @@
 
 @implementation XHMessageVoiceFactory
 
-+ (UIImageView *)messageVoiceAnimationImageViewWithBubbleMessageType:(XHBubbleMessageType)type {
++ (UIImageView *)messageVoiceAnimationImageViewWithBubbleMessageType:(XHMessageType)type {
     UIImageView *messageVoiceAniamtionImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     NSString *imageSepatorName;
     switch (type) {
-        case XHBubbleMessageType_Sending:
+        case XHMessageType_Sending:
             imageSepatorName = @"Sender";
             break;
-        case XHBubbleMessageType_Receiving:
+        case XHMessageType_Receiving:
             imageSepatorName = @"Receiver";
             break;
         default:

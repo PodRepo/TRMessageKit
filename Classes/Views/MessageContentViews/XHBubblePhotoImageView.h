@@ -28,8 +28,8 @@
 @property (strong, nonatomic) NSString *videoFileURL;
 - (void)setUp;
 - (void)clear;
-- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
-- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
+- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
+- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
     
 /**
  *
@@ -45,13 +45,13 @@
  *  @param originPhotoUrl    目标图片原图的URL链接
  *  @param bubbleMessageType 目标消息类型
  */
-- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
+- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
 
 /**
  *  获取消息类型比如发送或接收
  *
  *  @return 消息类型
  */
-- (XHBubbleMessageType)getBubbleMessageType;
+- (XHMessageType)getBubbleMessageType;
 
 @end

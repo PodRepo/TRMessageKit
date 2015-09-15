@@ -11,7 +11,7 @@
 
 @implementation XHMessageBubbleFactory
 
-+ (UIImage *)bubbleImageViewForType:(XHBubbleMessageType)type
++ (UIImage *)bubbleImageViewForType:(XHMessageType)type
                                   style:(XHBubbleImageViewStyle)style
                               meidaType:(XHBubbleMessageMediaType)mediaType {
     NSString *messageTypeString;
@@ -26,11 +26,11 @@
     }
     
     switch (type) {
-        case XHBubbleMessageType_Sending:
+        case XHMessageType_Sending:
             // 发送
             messageTypeString = [messageTypeString stringByAppendingString:@"_Sending"];
             break;
-        case XHBubbleMessageType_Receiving:
+        case XHMessageType_Receiving:
             // 接收
             messageTypeString = [messageTypeString stringByAppendingString:@"_Receiving"];
             break;

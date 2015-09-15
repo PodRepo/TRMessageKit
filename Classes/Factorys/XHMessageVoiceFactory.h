@@ -11,6 +11,6 @@
 
 @interface XHMessageVoiceFactory : NSObject
 
-+ (UIImageView *)messageVoiceAnimationImageViewWithBubbleMessageType:(XHBubbleMessageType)type;
++ (UIImageView *)messageVoiceAnimationImageViewWithBubbleMessageType:(XHMessageType)type;
 
 @end

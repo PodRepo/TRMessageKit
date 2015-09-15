@@ -23,7 +23,7 @@
 /**
  *  消息类型
  */
-@property (nonatomic, assign) XHBubbleMessageType bubbleMessageType;
+@property (nonatomic, assign) XHMessageType bubbleMessageType;
 
 
 //@property (strong, nonatomic) AVPlayer *player;
@@ -34,7 +34,7 @@
 
 @implementation XHBubblePhotoImageView
 
-- (XHBubbleMessageType)getBubbleMessageType {
+- (XHMessageType)getBubbleMessageType {
     return self.bubbleMessageType;
 }
 
@@ -74,7 +74,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
 }
 
-- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType {
+- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType {
     //    originPhotoUrl = @"http://7xiakd.com2.z0.glb.qiniucdn.com/E0E7B982-B49B-4482-9491-68125B886468.MOV";
     NSLog(@"playerVideo %@ ", originPhotoUrl);
     WEAKSELF
@@ -173,7 +173,7 @@
     
 }
 
-- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType {
+- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType {
     //    originPhotoUrl = @"http://7xiakd.com2.z0.glb.qiniucdn.com/E0E7B982-B49B-4482-9491-68125B886468.MOV";
     self.bubbleMessageType = bubbleMessageType;
     self.messagePhoto = [UIImage imageNamed:@"m_avator"];
@@ -200,7 +200,7 @@
 }
 
 
-- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType {
+- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHMessageType)bubbleMessageType {
     self.bubbleMessageType = bubbleMessageType;
     self.messagePhoto = messagePhoto;
     
@@ -342,7 +342,7 @@
     
     float arcSize = 3;//角度的大小
     
-    if (self.bubbleMessageType == XHBubbleMessageType_Sending) {
+    if (self.bubbleMessageType == XHMessageType_Sending) {
         float arcStartY = margin + radius + triangleMarginTop + triangleSize - (triangleSize - arcSize / margin * triangleSize) / 2;//圆弧起始Y值
         float arcStartX = width - arcSize;//圆弧起始X值
         float centerOfCycleX = width - arcSize - pow(arcSize / margin * triangleSize / 2, 2) / arcSize;//圆心的X值
@@ -384,7 +384,7 @@
     CGContextAddLineToPoint(context, 0, radius + margin);
     CGContextAddLineToPoint(context, margin, radius + margin);
     
-    if (!self.bubbleMessageType == XHBubbleMessageType_Sending) {
+    if (!self.bubbleMessageType == XHMessageType_Sending) {
         float arcStartY = margin + radius + triangleMarginTop + (triangleSize - arcSize / margin * triangleSize) / 2;//圆弧起始Y值
         float arcStartX = arcSize;//圆弧起始X值
         float centerOfCycleX = arcSize + pow(arcSize / margin * triangleSize / 2, 2) / arcSize;//圆心的X值

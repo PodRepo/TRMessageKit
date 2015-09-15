@@ -18,10 +18,10 @@
 @property (nonatomic, assign) double progress;
 
 
-- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
-- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
-- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHBubbleMessageType)bubbleMessageType;
-- (XHBubbleMessageType)getBubbleMessageType;
+- (void)playerVideo:(NSString*)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
+- (void)configureMessageVideo:(NSString *)originPhotoUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
+- (void)configureMessagePhoto:(UIImage *)messagePhoto thumbnailUrl:(NSString *)thumbnailUrl onBubbleMessageType:(XHMessageType)bubbleMessageType;
+- (XHMessageType)getBubbleMessageType;
 
 
 @end
