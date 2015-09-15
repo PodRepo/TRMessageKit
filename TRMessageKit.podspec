@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TRMessageKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "fork fro TRMessageKit"
 
   s.description  = <<-DESC
@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
   #s.private_header_files = "Classes/TRVoice2Word/IATConfig.h"
   s.public_header_files = "Classes/**/*.h"
-
+  s.resources = "Resources/*"
 
   s.frameworks        = "CoreTelephony", "SystemConfiguration"
-  s.library = 'stdc++', 'z'
+  s.library = 'stdc++.6.0.9', 'z'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 

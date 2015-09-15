@@ -1,5 +1,7 @@
-TRTRMessageKit/Pods
-TRTRMessageKit/Podfile.lock
+
+.DS_Store
+TRMessageKit/Pods
+TRMessageKit/Podfile.lock
 # Xcode
 #
 build/
